@@ -104,6 +104,68 @@
                       </a>
                     </div>
                 </nav>
+
+                <div class="col-md-12 mb-3">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" id="showTotal" name="showTotal">
+                      <label class="form-check-label" for="showTotal">Hiện tổng</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" id="showWin" name="showWin">
+                      <label class="form-check-label" for="showWin">Hiện trúng</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" id="filterUsername" name="filterUsername">
+                      <label class="form-check-label" for="filterUsername">Xếp theo người chơi</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" id="isShowDetail" name="isShowDetail">
+                      <label class="form-check-label" for="isShowDetail">Hiện chi tiết</label>
+                    </div>
+                </div>
+
+                <table class="table table-bordered">
+                    <thead class="table-light">
+                      <tr>
+                        <th scope="col">STT</th>
+                        <th scope="col">Người chơi</th>
+                        <th scope="col">Nội dung</th>
+                        <th scope="col">Tiền đặt</th>
+                        <th scope="col">Thời gian nhận</th>
+                        <th scope="col">Trạng thái</th>
+                        <th scope="col" class="text-center">Thao tác</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>Người chơi A</td>
+                        <td>
+                          <a href="#" style="color: #259dba;">dc 12 34 da 10n</a>
+                        </td>
+                        <td>
+                          2c: <b>5,000</b> &nbsp;&nbsp; 3,4c: <b>0</b>
+                        </td>
+                        <td>13:45</td>
+                        <td>
+                          <span class="badge bg-success">Đã xổ</span>
+                        </td>
+                        <td class="text-center">
+                          <a href="#" title="Chỉnh sửa tin nhắn">
+                            <i class="fas fa-pencil-alt text-primary"></i>
+                          </a>
+                          <a href="#" title="Xoá tin nhắn" class="ms-2">
+                            <i class="fas fa-trash text-danger"></i>
+                          </a>
+                          <a href="#" title="Lịch sử chỉnh sửa" class="ms-2">
+                            <i class="fas fa-history text-secondary"></i>
+                          </a>
+                        </td>
+                      </tr>
+                    </tbody>
+                </table>
+                  
+                  
             </div>
             
         </div>

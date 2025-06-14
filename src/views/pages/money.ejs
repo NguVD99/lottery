@@ -15,6 +15,130 @@
         </li>
       </ol>
     </nav>
+
+    <div class="bootstrap-iso content-container" style="margin: 10px;">
+        <div class="row paddingAll">
+            <div class="container py-3">
+                <!-- Dòng 1: Checkbox "Chọn khoảng ngày" -->
+                <div class="row mb-2">
+                  <div class="col-auto">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="customCheckRange">
+                      <label class="form-check-label" for="customCheckRange">
+                        Chọn khoảng ngày
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              
+                <!-- Dòng 2: Các input và nút lọc -->
+                <div class="row gy-2 align-items-center">
+                  <!-- Từ ngày -->
+                  <div class="col-md-2">
+                    <input type="text" class="form-control" id="from_date" placeholder="Từ ngày">
+                  </div>
+              
+                  <!-- Đến ngày (ẩn mặc định) -->
+                  <div class="col-md-2" id="toDateContainer" style="display: none;">
+                    <input type="text" class="form-control" id="to_date" placeholder="Đến ngày">
+                  </div>
+              
+                  <!-- Tìm kiếm -->
+                  <div class="col-md-2">
+                    <input type="text" class="form-control" id="searchfieldmoney" placeholder="Tên, SĐT">
+                  </div>
+              
+                  <!-- Nút lọc -->
+                  <div class="col-md-6 d-flex flex-nowrap align-items-center gap-1">
+                    <button class="btn btn-sm btn-primary"><i class="fa fa-search"></i> Xem</button>
+                    <button class="btn btn-sm btn-outline-primary">Hôm qua</button>
+                    <button class="btn btn-sm btn-outline-info">Hôm nay</button>
+                    <button class="btn btn-sm btn-outline-warning">Tuần trước</button>
+                    <button class="btn btn-sm btn-outline-danger">Tuần này</button>
+                  </div>
+                  
+                </div>
+              </div>
+              
+              <!-- JavaScript để bật/tắt ô "Đến ngày" -->
+              <script>
+                document.getElementById('customCheckRange').addEventListener('change', function () {
+                  const toDateContainer = document.getElementById('toDateContainer');
+                  toDateContainer.style.display = this.checked ? 'block' : 'none';
+                });
+              </script>      
+        </div>
+
+        <div class="col-md-12 d-flex gap-3 mb-3">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="customCheck" name="example1">
+              <label class="form-check-label" for="customCheck">Hiện tổng</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="returnPrice" name="example1">
+              <label class="form-check-label" for="returnPrice">Hiện giá hồi</label>
+            </div>
+          </div>
+        </div>
+
+        <table class="table table-bordered table-sm text-center align-middle">
+            <thead class="table-light">
+              <tr>
+                <th>STT</th>
+                <th>NGƯỜI CHƠI</th>
+                <th>2 CON MN</th>
+                <th>3 CON MN</th>
+                <th>4 CON MN</th>
+                <th>TRÚNG MN</th>
+                <th>TỔNG THU/TRẢ MN</th>
+                <th>2 CON MB</th>
+                <th>3 CON MB</th>
+                <th>4 CON MB</th>
+                <th>TRÚNG MB</th>
+                <th>TỔNG THU/TRẢ MB</th>
+                <th>TỔNG THU/TRẢ KHÁCH</th>
+                <th>THAO TÁC</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Người chơi 1</td>
+                <td>19,758<br><small>(15,680.898)</small></td>
+                <td>8,429<br><small>(6,321.75)</small></td>
+                <td>752<br><small>(564)</small></td>
+                <td><a href="#" class="text-info">1,500</a></td>
+                <td><strong class="text-danger">21,066.648</strong></td>
+                <td>155,987<br><small>(117,232.064)</small></td>
+                <td>20,221<br><small>(15,165.75)</small></td>
+                <td>940<br><small>(705)</small></td>
+                <td><a href="#" class="text-info">96,000</a></td>
+                <td><strong class="text-danger">37,102.814</strong></td>
+                <td><strong class="text-danger">71,308.61</strong></td>
+                <td>
+                  <button class="btn btn-info btn-sm"><i class="fa fa-eye"></i></button>
+                  <button class="btn btn-primary btn-sm"><i class="fa fa-clone"></i></button>
+                </td>
+              </tr>
+            </tbody>
+        </table>
+
+        <div class="row text-center py-2">
+            <div class="col-md-4">
+              <span>Tổng trúng MN:</span>
+              <span class="fw-bold text-danger">21,066.648</span>
+            </div>
+            <div class="col-md-4">
+              <span>Tổng trúng MB:</span>
+              <span class="fw-bold text-danger">37,102.814</span>
+            </div>
+            <div class="col-md-4">
+              Tổng <span class="fw-bold text-danger">thu</span>/<span class="fw-bold text-primary">trả</span> khách:
+              <span class="fw-bold text-danger">71,308.61</span>
+            </div>
+        </div>
+          
+          
     
-  </div>
+    </div>
   
