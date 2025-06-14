@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+  }
+  
+  .navbar {
+    border-bottom: 3px solid #ff9800;
+  }
+  
+  .sidebar {
+    background-color: #343a40;
+    min-height: 100vh;
+  }
+
+  .bg-header-tts {
+    background-image: url('/images/bg-header-tts.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .bg-dark {
+    background-color: #5a5c69 !important;
+  }
+
+  .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+  }
+  
+  .sidebar {
+    width: 14rem;
+    min-height: 100vh;
+    background-color: #222b4a;
+    color: #a2a3b7;
+  }
+  
+  .sidebar .nav-item .nav-link {
+    display: block;
+    padding: 1rem;
+    color: #a2a3b7;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .sidebar .nav-item .nav-link:hover {
+    background-color: #343a6e;
+    color: white;
+  }
+  
+  .sidebar .nav-item.active .nav-link {
+    background-color: #3c4270;
+    color: white;
+  }
+  
+
+  .breadcrumb-tts {
+    background-color: #f8f9fa;
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+  }
+  
+  .breadcrumb-tts .huongdan-tts {
+    list-style: none;
+    margin: 0;
+    font-size: 0.95rem;
+  }

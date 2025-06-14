@@ -1,0 +1,81 @@
+
+<div class="container">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb breadcrumb-tts d-flex align-items-center justify-content-between" style="background-color: #f8f9fa; padding: 0.75rem 1rem; border-radius: 0.5rem;">
+        <div class="d-flex align-items-center">
+          <li class="breadcrumb-item">
+            <i class="fa fa-home me-1"></i>
+            <a href="/result">Trang chủ</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">Danh bạ</li>
+        </div>
+        <li class="huongdan-tts" style="list-style: none;">
+          <span class="title fw-bold text-muted me-1">Ngày hết hạn:</span>
+          <span class="text-danger">01-04-2030 00:00</span>
+        </li>
+      </ol>
+    </nav>
+
+    <div class="bootstrap-iso content-container" style="margin: 10px;">
+
+        <!-- Thanh tìm kiếm và nút -->
+        <div class="row mb-3">
+          <div class="col-md-3 col-sm-6 mb-2">
+            <input class="form-control" id="searchfield" name="search" placeholder="Tên, SĐT" type="text">
+          </div>
+      
+          <div class="col-md-3 col-sm-6">
+            <div class="d-flex gap-2">
+              <button class="btn btn-secondary btnborder">
+                <i class="fa fa-search mr-1"></i><span>Xem</span>
+              </button>
+              <button class="btn btn-primary btnborder">
+                <i class="fas fa-plus mr-1"></i><span>Thêm</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Bảng danh sách người chơi -->
+        <div class="row" style="font-size: 14px;">
+          <div class="col-12 table-responsive">
+            <table class="table table-bordered table-hover">
+              <thead class="thead-light" style="font-size: 13px;">
+                <tr>
+                  <th scope="col">STT</th>
+                  <th scope="col">NGƯỜI CHƠI</th>
+                  <th scope="col">SỐ ĐIỆN THOẠI</th>
+                  <th scope="col">NGÀY TẠO</th>
+                  <th scope="col">NGÀY CẬP NHẬT</th>
+                  <th scope="col">THAO TÁC</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Người chơi 1</td>
+                  <td></td>
+                  <td>14/06/2025 01:00:34</td>
+                  <td>14/06/2025 01:00:34</td>
+                  <td>
+                    <a href="#" data-toggle="modal" data-target="#modalContact" title="Sửa">
+                      <i class="fas fa-pencil-alt text-primary"></i>
+                    </a>
+                    <a href="#" class="ml-2" title="Xoá">
+                      <i class="fa fa-trash text-danger"></i>
+                    </a>
+                    <a href="#" class="ml-2" title="Sao chép">
+                      <i class="fa fa-copy text-info"></i>
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      
+      </div>
+      
+    
+  </div>
+  

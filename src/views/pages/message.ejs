@@ -1,0 +1,117 @@
+
+<div class="container">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb breadcrumb-tts d-flex align-items-center justify-content-between" style="background-color: #f8f9fa; padding: 0.75rem 1rem; border-radius: 0.5rem;">
+        <div class="d-flex align-items-center">
+          <li class="breadcrumb-item">
+            <i class="fa fa-home me-1"></i>
+            <a href="/result">Trang chủ</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">Tin nhắn</li>
+        </div>
+        <li class="huongdan-tts" style="list-style: none;">
+          <span class="title fw-bold text-muted me-1">Ngày hết hạn:</span>
+          <span class="text-danger">01-04-2030 00:00</span>
+        </li>
+      </ol>
+    </nav>
+
+    <div class="bootstrap-iso content-container" style="margin: 10px;">
+        <div class="row paddingAll">
+            <!-- Nhóm nút thao tác chính -->
+            <div class="col-md-12 form-group d-flex justify-content-between align-items-center flex-wrap gap-2 mb-3">
+
+                <!-- Nút Thêm sát bên trái -->
+                <div class="me-auto">
+                    <button class="btn btn-primary btn-icon-split btnborder btn-web" data-toggle="modal" data-target="#modal2">
+                        <span class="icon text-white-50"><i class="fas fa-plus"></i></span>
+                        <span class="text">Thêm</span>
+                    </button>
+                </div>
+          
+                <!-- Nhóm nút bên phải -->
+                <div class="d-flex gap-2">
+                    <button class="btn btn-danger btn-icon-split btnborder btn-web">
+                        <span class="icon text-white-50"><i class="fa fa-trash"></i></span>
+                        <span class="text">Xoá</span>
+                    </button>
+          
+                    <button class="btn btn-success btn-icon-split btnborder" data-toggle="modal" data-target="#message-filter">
+                        <span class="icon text-white-50"><i class="fa fa-th"></i></span>
+                        <span class="text">Phân loại</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Nhóm bộ lọc và tìm kiếm -->
+            <div class="col-md-12">
+                <div class="row"> 
+                    <div class="col-md-2 form-group">
+                        <input type="text" class="form-control" placeholder="Tìm tin nhắn">
+                    </div>
+  
+                    <div class="col-md-2 form-group">
+                        <input type="text" class="form-control hasDatepicker" id="date" name="date" placeholder="Ngày/tháng/năm">
+                    </div>
+  
+                    <div class="col-md-2 form-group">
+                        <input type="text" class="form-control" id="searchfieldinms" name="searchfieldinms" placeholder="Tên, SĐT">
+                    </div>
+  
+                    <div class="col-md-6 form-group d-flex flex-wrap align-items-start justify-content-start gap-2">
+                        <button class="btn btn-secondary btnborder">
+                           <i class="fa fa-search"></i> <span>Xem</span>
+                        </button>
+                        <button class="btn btn-secondary btnborder"><span>Hôm qua</span></button>
+                        <button class="btn btn-info btnborder"><span>Hôm nay</span></button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+       
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <nav>
+                    <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                      <!-- MIỀN NAM tab -->
+                      <a class="nav-item nav-link active show" id="MIỀN NAM-tab" data-toggle="tab" role="tab" href="#nav-mn" aria-controls="MIỀN NAM" aria-selected="true">
+                        <span class="d-none d-md-block">MIỀN NAM</span>
+                        <span class="d-block d-md-none">MN</span>
+                      </a>
+                  
+                      <!-- MIỀN BẮC tab -->
+                      <a class="nav-item nav-link" id="MIỀN BẮC-tab" data-toggle="tab" role="tab" href="#nav-mb" aria-controls="MIỀN BẮC" aria-selected="false">
+                        <span class="d-none d-md-block">MIỀN BẮC</span>
+                        <span class="d-block d-md-none">MB</span>
+                      </a>
+                  
+                      <!-- MIỀN TRUNG tab -->
+                      <a class="nav-item nav-link" id="MIỀN TRUNG-tab" data-toggle="tab" role="tab" href="#nav-mt" aria-controls="MIỀN TRUNG" aria-selected="false">
+                        <span class="d-none d-md-block">MIỀN TRUNG</span>
+                        <span class="d-block d-md-none">MT</span>
+                      </a>
+                  
+                      <!-- SAI CÚ PHÁP tab -->
+                      <a class="nav-item nav-link" id="SAI CÚ PHÁP-tab" data-toggle="tab" role="tab" href="#nav-other" aria-controls="SAI CÚ PHÁP" aria-selected="false">
+                        <span>
+                          <span class="d-none d-md-block">SAI CÚ PHÁP</span>
+                          <span class="d-block d-md-none">KHÁC</span>
+                          <div class="rightCircle">
+                            <span style="margin: 2px;">1</span>
+                          </div>
+                        </span>
+                      </a>
+                    </div>
+                </nav>
+            </div>
+            
+        </div>
+  
+ 
+  
+        
+    </div>
+    
+  </div>
+  
